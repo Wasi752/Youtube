@@ -1,12 +1,14 @@
+import { useParams } from "react-router-dom";
 
 const youtubeImages = ["youtube-images/10.jpeg", "youtube-images/06.jpeg", "youtube-images/07.jpeg", "youtube-images/08.jpeg", "youtube-images/09.jpeg", "youtube-images/10.jpeg", "youtube-images/11.jpeg", "youtube-images/12.jpeg", "youtube-images/05.jpeg"];
 const rightSideBars = youtubeImages.map (z => <RightSideBar clip = {z}/>)
 
 function Youtube2nd() {
+    const params = useParams();
     return (
         <div className="flex w-full h-full">
             <div className=" w-9/12 h-full m-2">
-                <img src="youtube-images/youtube.jpg" className="w-full h-full" />
+                <img src={"youtube-images/" + params.image} className="w-full h-full" />
             </div>
             <div className="w-5/12 h-full">
                 {rightSideBars}

@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-const youtubeImages = ["youtube-images/10.jpeg", "youtube-images/06.jpeg", "youtube-images/07.jpeg", "youtube-images/08.jpeg", "youtube-images/09.jpeg", "youtube-images/10.jpeg", "youtube-images/11.jpeg", "youtube-images/12.jpeg", "youtube-images/05.jpeg"];
+const youtubeImages = ["/10.jpeg", "/06.jpeg", "/07.jpeg", "/08.jpeg", "/09.jpeg", "/10.jpeg", "/11.jpeg", "/12.jpeg", "/05.jpeg"];
 const rightSideBars = youtubeImages.map (z => <RightSideBar clip = {z}/>)
 
 function Youtube2nd() {
@@ -18,14 +18,16 @@ function Youtube2nd() {
 };
 function RightSideBar({ clip }) {
     return (
+        
+        <Link to = {clip}>
         <div className="w-[70%] h-2/6 flex flex-row m-2">
-            <img src={clip} className="w-[50%] h-full" />
+            <img src={"/youtube-images" + clip} className="w-[50%] h-full" />
             <div className="m-1">
                 <p className="text-lg text-bold">Bangladeshi Food</p>
                 <p className="text-sm">Lectures about Food</p>
                 <p className="text-sm"> 10k Views . 1 month</p>
             </div>
-        </div>
+        </div></Link>
     )
 }
 export default Youtube2nd;

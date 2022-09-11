@@ -19,6 +19,7 @@ function Header (){
                 <div class="w-3/12 h-full m-2"><img src="youtube-images/01cameraicon.jpeg" alt="Create" class="h-[60%] w-[70%] p-1"/></div>
                 <div class="w-6/12 h-full m-2"></div>
             </div>
+            <div>My Name</div>
         </div>
     )
 };

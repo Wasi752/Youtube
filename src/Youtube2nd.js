@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 
-const youtubeImages = ["/10.jpeg", "/06.jpeg", "/07.jpeg", "/08.jpeg", "/09.jpeg", "/10.jpeg", "/11.jpeg", "/12.jpeg", "/05.jpeg"];
+const youtubeImages = ["/10.jpeg", "/02.jpeg", "/01.jpeg", "/03.jpeg", "/04.jpeg", "/07.jpeg", "/08.jpeg", "/09.jpeg", "/10.jpeg", "/11.jpeg", "/12.jpeg", "/05.jpeg"];
 const rightSideBars = youtubeImages.map (z => <RightSideBar clip = {z}/>)
 
 function Youtube2nd() {
